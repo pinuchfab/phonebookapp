@@ -11,5 +11,6 @@
     "angular-sanitize": "#1.4.0",
     "angular": "#1.4.0",
     "jquery": "#2.1.4",
+    "jstorage": "#0.4.12",
   }
 }
