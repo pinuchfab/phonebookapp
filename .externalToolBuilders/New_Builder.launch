@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.ui.externaltools.ProgramBuilderLaunchConfigurationType">
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="GEM_HOME" value="/Users/ukedfabien/siteviewcode/360-siteview/server/trunk/deployment/upstream/compass/gems"/>
+<mapEntry key="GEM_PATH" value="/Users/ukedfabien/siteviewcode/360-siteview/server/trunk/deployment/upstream/compass"/>
+<mapEntry key="PATH" value="/Users/ukedfabien/siteviewcode/360-siteview/server/trunk/deployment/upstream/bin"/>
+</mapAttribute>
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="/Users/ukedfabien/siteviewcode/360-siteview/server/trunk/deployment/upstream/node_modules/grunt-cli/bin/grunt"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_RUN_BUILD_KINDS" value="full,incremental,auto,"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="sass-clean-dev"/>
+<booleanAttribute key="org.eclipse.ui.externaltools.ATTR_TRIGGERS_CONFIGURED" value="true"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_WORKING_DIRECTORY" value="${workspace_loc:/nlyte-test}"/>
+</launchConfiguration>

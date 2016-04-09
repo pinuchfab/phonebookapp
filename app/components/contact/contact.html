@@ -1,0 +1,75 @@
+<div class="page" ng-controller="ContactController" ng-cloak>
+	<div class="page-title">
+		<h2>Contact</h2>
+	</div>
+	<form class="form-horizontal" role="form" name="contact-form">
+		<div class="boxbreathe">
+			<div class="row form-row">
+				<div class="col-xs-8">
+					<input type="text" class="form-control" name="forename"
+						placeholder="Contact ForeName" id="forename"
+						ng-value="contact.foreName" ng-model="contact.foreName" />
+				</div>
+			</div>
+			<div class="row form-row">
+				<div class="col-xs-8">
+					<input type="text" class="form-control" name="surname"
+						placeholder="Contact SurName" id="surname"
+						ng-value="contact.surName" ng-model="contact.surName" />
+				</div>
+				<div class="col-xs-4">
+					<button type="button" class="btn btn-primary"
+						ng-click="onSaveContact()">Save</button>
+				</div>
+			</div>
+		</div>
+		<div class="section-title">
+			<h2>Add a New Phone</h2>
+		</div>
+		<div class="boxbreathe">
+			<div class="row form-row">
+				<div class="col-xs-8">
+					<input type="text" class="form-control" name="phone"
+						placeholder="New Phone Number" id="phone"
+						ng-value="phoneToAdd.Number" ng-model="phoneToAdd.Number" />
+				</div>
+			</div>
+			<div class="row form-row">
+				<div class="col-xs-8">
+					<select class="form-control" id="phonetype"
+						ng-model="phoneToAdd.Type"
+						ng-options="key as value for (key, value) in phoneTypes"
+						placeholder="Phone Type">
+					</select>
+				</div>
+				<div class="col-xs-4">
+					<button type="button" class="btn btn-primary"
+						ng-click="onAddPhone()" ng-disabled="!phoneToAdd.Number">Add
+						Phone</button>
+				</div>
+			</div>
+		</div>
+		<div class="section-title">
+			<h2>Phones</h2>
+		</div>
+		<div class="boxbreathe">
+			<div ng-repeat="phone in contact.phones" class="row form-row">
+				<div class="col-xs-6">
+					<input type="text" class="form-control" name="phone"
+						placeholder="Phone Number" id="phone" ng-value="phone.Number"
+						ng-model="phone.Number" />
+				</div>
+				<div class="col-xs-3">
+					<select class="form-control" id="phonetype" ng-model="phone.Type"
+						ng-options="key as value for (key, value) in phoneTypes"
+						placeholder="Phone Type">
+					</select>
+				</div>
+				<div class="col-xs-3">
+					<button type="button" class="btn btn-primary"
+						ng-click="onSavePhone(phone)" ng-disabled="!phone.Number">Save</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

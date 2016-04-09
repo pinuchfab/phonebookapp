@@ -1,0 +1,68 @@
+// App css
+
+// General styling of the app.
+
+body {
+	color: #000000; 
+	font-family : "museo-sans", sans-serif; 
+	font-weight : 100; 
+	background-color: #fff;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div {
+	display: block;
+}
+
+header,section,footer {
+	display: block;
+}
+
+a {
+	color: #2a6496;
+	text-decoration: none;
+}
+
+a:hover,a:focus {
+	color: #2a6496;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 0px;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: 700;
+	margin: 0px;
+}
+
+h3 {
+	font-size: 1.125em;
+	font-weight: 700;
+	margin: 0px;
+	color: #838383;
+}
+
+:before,:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul,ol {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+td {
+	word-wrap: break-word;
+}

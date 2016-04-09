@@ -1,0 +1,42 @@
+<div class="page" ng-controller="ContactsController" ng-cloak>
+	<div class="page-title">
+		<h2>Contacts</h2>
+	</div>
+	<form class="form-horizontal" role="form" name="contacts-form">
+		<div class="boxbreathe">
+			<div class="row form-row">
+				<div class="col-xs-9">
+					<input type="text" class="form-control" name="forename"
+						placeholder="New Contact ForeName" id="forename" ng-value="contactToAdd.foreName"
+						ng-model="contactToAdd.foreName"/>
+				</div>
+			</div>
+			<div class="row form-row">
+				<div class="col-xs-9">
+					<input type="text" class="form-control" name="surname"
+						placeholder="New Contact SurName" id="surname" ng-value="contactToAdd.surName"
+						ng-model="contactToAdd.surName"/>
+				</div>
+				<div class="col-xs-3">
+					<button type="button" class="btn btn-primary" ng-click="onAddContact()" ng-disabled="!contactToAdd.foreName">Add</button>
+				</div>
+			</div>
+			<div class="row form-row">
+				<div class="col-xs-12">
+					<div class="search-container" sv-height-provider>
+			            <div class="search">
+			                <span class="glyphicon glyphicon-search search-icon"></span>
+			                <input class="search-query" type="search" ng-model="search"
+			                    placeholder="filter contact ..." />
+			            </div>
+			        </div>
+		        </div>
+		    </div>
+			<div ng-repeat="contact in contacts | filter:{foreName:search}" class="row form-row">
+				<div class="col-xs-12">
+					<button type="button" class="btn btn-default" ng-click="onContactClick(contact)">{{contact.foreName + " " + contact.surName}}</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

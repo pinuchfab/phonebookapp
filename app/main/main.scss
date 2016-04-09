@@ -1,0 +1,23 @@
+// The main SASS file, which includes all other SASS files
+// This defines the load order of the SCSS files, so when adding/editing
+// sccs files, ensure that this order is appropriate for any dependencies
+// between files.
+
+// Main.
+@import 'phone-book-app';
+
+// Components.
+@import '../components/header/header';
+@import '../components/login-signup/login-signup';
+@import '../components/phone-books/phone-books';
+@import '../components/phone-book/phone-book';
+@import '../components/contacts/contacts';
+@import '../components/contact/contact';
+
+// Shared style.
+@import '../shared-style/page';
+@import '../shared-style/search';
+@import '../shared-style/container';
+@import '../shared-style/form';
+@import '../shared-style/input';
+@import '../shared-style/space-bottom';

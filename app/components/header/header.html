@@ -1,0 +1,12 @@
+<div class="header" ng-controller="MainController">
+    <div class="boxbreathe">
+        <h1>
+            <span class="label label-default">Phone Books App</span>
+        </h1>
+    </div>
+    <div class="boxbreathe">
+    	<button class="btn btn-default" type="button" ng-click="navigateTo('/contacts')" ng-show="canLogout()">Contacts</button>
+	    <button class="btn btn-default" type="button" ng-click="navigateTo('/phonebooks')" ng-show="canLogout()">Phone Books</button>
+	    <button class="btn btn-default" type="button" ng-click="logout()" ng-show="canLogout()">Logout</button>
+    </div>
+</div>

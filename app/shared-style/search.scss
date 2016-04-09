@@ -1,0 +1,35 @@
+// Search
+
+.search-container {
+	padding: 5px 0;
+	
+	.search {
+		padding: 4px 0 4px 20px;
+		background: #E9E9E9;
+		border-radius: 20px;
+		vertical-align: middle;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+		height: 30px;
+		
+		.search-query {
+			border: 0;
+			width: 70%;
+			color: #555;
+			background: #E9E9E9;
+			color: #555;
+			font-weight: 300;
+		}
+		
+		.search-query:focus {
+			outline: 0;
+		}
+		
+		.search-icon {
+			font-size: 1.15em;
+			margin-right: 10px;
+		}
+	}
+}

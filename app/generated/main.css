@@ -1,0 +1,301 @@
+/* 
+ * THIS FILE IS GENERATED FROM SCSS FILES.
+ * DO NOT EDIT.  Edit the source .scss files instead.
+ */
+
+/* line 5, ../main/phone-book-app.scss */
+body {
+  color: #000000;
+  font-family: "museo-sans", sans-serif;
+  font-weight: 100;
+  background-color: #fff;
+}
+
+/* line 12, ../main/phone-book-app.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 18, ../main/phone-book-app.scss */
+div {
+  display: block;
+}
+
+/* line 22, ../main/phone-book-app.scss */
+header, section, footer {
+  display: block;
+}
+
+/* line 26, ../main/phone-book-app.scss */
+a {
+  color: #2a6496;
+  text-decoration: none;
+}
+
+/* line 31, ../main/phone-book-app.scss */
+a:hover, a:focus {
+  color: #2a6496;
+  text-decoration: none;
+}
+
+/* line 36, ../main/phone-book-app.scss */
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0px;
+}
+
+/* line 42, ../main/phone-book-app.scss */
+h2 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0px;
+}
+
+/* line 48, ../main/phone-book-app.scss */
+h3 {
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0px;
+  color: #838383;
+}
+
+/* line 55, ../main/phone-book-app.scss */
+:before, :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 61, ../main/phone-book-app.scss */
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* line 66, ../main/phone-book-app.scss */
+td {
+  word-wrap: break-word;
+}
+
+/* line 12, ../components/header/header.scss */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 80px;
+  text-align: center;
+  background-color: black;
+  z-index: 100;
+}
+
+/* line 1, ../components/login-signup/login-signup.scss */
+.sign-up-invite {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-weight: 100;
+  color: #428BCA;
+  font-size: 0.9em;
+}
+
+/* line 1, ../shared-style/page.scss */
+.page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: scroll;
+  max-width: 375px;
+  margin: auto;
+}
+/* line 9, ../shared-style/page.scss */
+.page .page-title {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #000;
+}
+/* line 15, ../shared-style/page.scss */
+.page .section-title {
+  text-align: center;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  border-bottom: solid 1px #000;
+  border-top: solid 1px #000;
+  color: #979393;
+}
+/* line 24, ../shared-style/page.scss */
+.page label {
+  padding-left: 0;
+}
+/* line 28, ../shared-style/page.scss */
+.page .btn {
+  position: relative;
+  min-height: 32px;
+  width: 100%;
+}
+
+/* line 3, ../shared-style/search.scss */
+.search-container {
+  padding: 5px 0;
+}
+/* line 6, ../shared-style/search.scss */
+.search-container .search {
+  padding: 4px 0 4px 20px;
+  background: #E9E9E9;
+  border-radius: 20px;
+  vertical-align: middle;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  height: 30px;
+}
+/* line 17, ../shared-style/search.scss */
+.search-container .search .search-query {
+  border: 0;
+  width: 70%;
+  color: #555;
+  background: #E9E9E9;
+  color: #555;
+  font-weight: 300;
+}
+/* line 26, ../shared-style/search.scss */
+.search-container .search .search-query:focus {
+  outline: 0;
+}
+/* line 30, ../shared-style/search.scss */
+.search-container .search .search-icon {
+  font-size: 1.15em;
+  margin-right: 10px;
+}
+
+@media (min-width: 667px) {
+  /* line 8, ../shared-style/container.scss */
+  .app-container {
+    margin: auto;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 667px) {
+  /* line 16, ../shared-style/container.scss */
+  .app-container {
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+  }
+}
+/* line 29, ../shared-style/container.scss */
+.relative-container {
+  position: relative;
+}
+
+/* line 34, ../shared-style/container.scss */
+.boxbreathe {
+  padding: 5px;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+
+/* line 4, ../shared-style/form.scss */
+.form-area {
+  padding: 15px;
+}
+
+/* line 9, ../shared-style/form.scss */
+.form-row {
+  margin-bottom: 4px;
+}
+/* line 11, ../shared-style/form.scss */
+.form-row input[type=checkbox] {
+  margin-right: 10px;
+}
+
+/* line 17, ../shared-style/form.scss */
+.form-control {
+  padding-bottom: 4px;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+/* line 25, ../shared-style/form.scss */
+.control-label,
+.form-section-label {
+  margin-top: 4px;
+}
+
+/* line 30, ../shared-style/form.scss */
+label,
+.control-top-label,
+.form-section-label {
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/* line 37, ../shared-style/form.scss */
+.control-top-label label {
+  margin-bottom: 0;
+}
+
+/* line 41, ../shared-style/form.scss */
+.form-label {
+  font-weight: 500;
+  margin: 0px;
+  line-height: 20px;
+  float: left;
+  position: relative;
+}
+
+/* line 4, ../shared-style/input.scss */
+.hideable-input {
+  opacity: 1;
+  margin-bottom: 4px;
+}
+
+/* line 9, ../shared-style/input.scss */
+.hideable-input,
+.hideable-input.ng-hide-remove,
+.hideable-input.ng-hide-add {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+/* line 16, ../shared-style/input.scss */
+.hideable-input.ng-hide-add.ng-hide-add-active {
+  -webkit-transition: opacity 0.2s linear, max-height 0.3s linear, margin-bottom 0.1s linear 0.3s;
+  transition: opacity 0.2s linear, max-height 0.3s linear, margin-bottom 0.1s linear 0.3s;
+}
+
+/* line 21, ../shared-style/input.scss */
+.hideable-input.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: opacity 0.2s linear 0.2s, max-height 0.3s linear 0.1s, margin-bottom 0.1s linear;
+  transition: opacity 0.2s linear 0.2s, max-height 0.3s linear 0.1s, margin-bottom 0.1s linear;
+}
+
+/* line 26, ../shared-style/input.scss */
+.hideable-input.ng-hide {
+  opacity: 0;
+  max-height: 0;
+  margin-bottom: 0px;
+}
+
+/* line 33, ../shared-style/input.scss */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* line 40, ../shared-style/input.scss */
+.number-input {
+  width: 70px;
+}
+
+/* line 5, ../shared-style/space-bottom.scss */
+.space-bottom {
+  margin-bottom: 4px;
+}

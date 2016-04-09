@@ -1,0 +1,39 @@
+// Container
+
+// Different styles for containers.
+
+// The app container in index.html.
+
+@media (min-width: 667px) {
+	.app-container {
+		//max-width: 667px;
+		margin: auto;
+	    margin-top: 100px;
+	}
+}
+
+@media (max-width: 667px) {
+	.app-container {
+		width: 100%;
+	    margin: auto;
+	    margin-top: 100px;
+	}
+}
+
+// Main angular view container with ng-view attribute.
+.main-view-container {
+}
+
+// Container with relative positioning, great for containing absolute positioned elements such as error pop-up.
+// @todo Maybe make all div relative by default.
+.relative-container {
+	position: relative;
+}
+
+// Some fancy container that has padding, radius and generally looks good for showing contents in rows.
+.boxbreathe {
+	padding: 5px;
+	border-radius: 4px;
+	// Prevent background color leak outs.
+	background-clip: padding-box;
+}

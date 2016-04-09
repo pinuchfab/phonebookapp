@@ -5,3 +5,7 @@ bower_components/
 tmp
 .DS_Store
 .idea
+libs/
+angular-seed/
+.sass-cache/
+e2e-tests/

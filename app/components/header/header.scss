@@ -1,0 +1,23 @@
+@media (min-width: 667px) {
+	.header {
+		//max-width: 667px;
+	}
+}
+
+@media (max-width: 667px) {
+	.header {
+	}
+}
+
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 80px;
+	text-align: center;
+	background-color: black;
+	z-index: 100;
+}

@@ -1,0 +1,47 @@
+// Form
+
+// Form area.
+.form-area {
+	padding: 15px;
+}
+
+// Form row.
+.form-row {
+	margin-bottom: 4px;
+	input[type=checkbox] {
+		margin-right: 10px;
+	}
+}
+
+// Form control (input, label, choices).
+.form-control {
+	padding-bottom: 4px;
+  	font-weight: 300;
+  	font-size: 1em;
+}
+
+// Form labels.
+// @todo Some clean-up to do here.
+.control-label,
+.form-section-label {
+	margin-top:	4px;
+}
+
+label,
+.control-top-label,
+.form-section-label {
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.control-top-label label {
+	margin-bottom: 0;
+}
+
+.form-label {
+	font-weight: 500;
+	margin: 0px;
+	line-height: 20px;
+	float: left;
+	position: relative;
+}

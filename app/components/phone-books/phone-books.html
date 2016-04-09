@@ -1,0 +1,35 @@
+<div class=page ng-controller="PhoneBooksController" ng-cloak>
+	<div class="page-title">
+		<h2>Phone Books</h2>
+	</div>
+	<form class="form-horizontal" role="form" name="phonebooks-form">
+		<div class="boxbreathe">
+			<div class="row form-row">
+				<div class="col-xs-9">
+					<input type="text" class="form-control" name="name"
+						placeholder="New Phone Book Name" id="name" ng-value="phoneBookToAdd.name"
+						ng-model="phoneBookToAdd.name"/>
+				</div>
+				<div class="col-xs-3">
+					<button type="button" class="btn btn-primary" ng-click="onAddPhoneBook()" ng-disabled="!phoneBookToAdd.name">Add</button>
+				</div>
+			</div>
+			<div class="row form-row">
+				<div class="col-xs-12">
+					<div class="search-container" sv-height-provider>
+			            <div class="search">
+			                <span class="glyphicon glyphicon-search search-icon"></span>
+			                <input class="search-query" type="search" ng-model="search"
+			                    placeholder="filter phone books ..." />
+			            </div>
+			        </div>
+		        </div>
+		    </div>
+			<div ng-repeat="phoneBook in phoneBooks | filter:{name:search}" class="row form-row">
+				<div class="col-xs-12">
+					<button type="button" class="btn btn-default" ng-click="onPhoneBookClick(phoneBook)">{{phoneBook.name}}</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

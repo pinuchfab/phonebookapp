@@ -1,0 +1,62 @@
+<div class="page" ng-controller="PhoneBookController" ng-cloak>
+	<div class="page-title">
+		<h2>Phone Book</h2>
+	</div>
+	<form class="form-horizontal" role="form" name="phonebook-form">
+		<div class="boxbreathe">
+			<div class="add row form-row">
+				<div class="col-xs-8">
+					<input type="text" class="form-control" name="name"
+						placeholder="Phone Book Name" id="name"
+						ng-value="phoneBook.name" ng-model="phoneBook.name" />
+				</div>
+				<div class="col-xs-4">
+					<button type="button" class="btn btn-primary"
+						ng-click="onSavePhoneBook()">Save</button>
+				</div>
+			</div>
+		</div>
+		<div class="section-title">
+			<h2>Add a New Contact</h2>
+		</div>
+		<div class="boxbreathe"> 
+			<div class="row form-row">
+				<div class="col-xs-8">
+					<select class="form-control"
+						id="contact"
+						ng-model="newContact.id"
+						ng-options="contact.id as (contact.foreName + ' ' + contact.surName) for contact in contacts | orderBy:value"
+						placeholder="Contact"
+					>
+					</select>
+				</div>
+				<div class="col-xs-4">
+					<button type="button" class="btn btn-primary"
+						ng-click="onAddContact()" ng-disabled="!newContact.id">Add Contact</button>
+				</div>
+			</div>
+		</div>
+		<div class="section-title">
+			<h2>Contacts</h2>
+		</div>
+		<div class="boxbreathe"> 
+			<div class="row form-row">
+				<div class="col-xs-12">
+					<div class="search-container" sv-height-provider>
+			            <div class="search">
+			                <span class="glyphicon glyphicon-search search-icon"></span>
+			                <input class="search-query" type="search" ng-model="search"
+			                    placeholder="filter contacts ..." />
+			            </div>
+			        </div>
+		        </div>
+		    </div>
+			<div ng-repeat="contact in contacts | filter:{foreName:search}" class="row form-row">
+				<div class="col-xs-12">
+					<button type="button" class="btn btn-default"
+						ng-click="onContactClick(contact)">{{contact.foreName + ' ' + contact.surName}}</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
